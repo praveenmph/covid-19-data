@@ -70,8 +70,6 @@ date,county,state,fips,cases,deaths
 
 In some cases, the geographies where cases are reported do not map to standard county boundaries. See the list of [geographic exceptions](#geographic-exceptions) for more detail on these.
 
----
-
 ### Live Data
 
 The files in the [live/](live/) directory are also available at three geographic levels and contain all the fields the historical data files have, but with only data for the current day. We try to update these files multiple times per day. 
@@ -92,6 +90,14 @@ In the live files, the case and death fields have the following definitions:
 We understand this breakout would also be valuable historically, and are working toward providing that. Please bear with us as we roll out this new and more complicated data.
 
 The live data can be found in files at the U.S. level in the [us.csv](live/us.csv) file, at the state level in the [states.csv](live/us-states.csv) file, and at the county level in the [counties.csv](live/us-counties.csv) file.
+
+### Population data
+
+Two additional files are provided:
+
+- `pop_est_2019.csv` provides estimated 2019 population by county.
+  Data are from [U.S. Census Bureau, Population Division, "Annual Estimates of the Resident Population for Counties in the United States: April 1, 2010 to July 1, 2019 (CO-EST2019-ANNRES)"](https://www2.census.gov/programs-surveys/popest/tables/2010-2019/counties/totals/co-est2019-annres.xlsx).
+- `co_fips.csv` cross-links FIPS codes with state and county names.
 
 
 ## Methodology and Definitions
